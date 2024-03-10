@@ -1,0 +1,8 @@
+sever:
+  port : 8084
+
+spring:
+  application:
+    name : employee-service
+  config:
+    import : "optional:configserver:http://localhost:8088"

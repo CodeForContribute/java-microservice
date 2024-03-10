@@ -6,7 +6,7 @@ import java.util.List;
 public class Department {
     private Long id;
     private String name;
-    private final List<Employee>employees = new ArrayList<>();
+    private List<Employee>employees = new ArrayList<>();
 
     public Department(Long id, String name) {
         this.id = id;
@@ -40,5 +40,9 @@ public class Department {
 
     public List<Employee> getEmployees() {
         return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 }
